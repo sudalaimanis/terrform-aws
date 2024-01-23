@@ -11,8 +11,8 @@ terraform {
 
 provider "aws" {
   region  = "ap-south-1"
-  access_key="AKIAS42BNNVSGLSDU6E3"
-  secret_key="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"
+  access_key="AKIAS42B------------"
+  secret_key="skeio99d------------"
 }
 # create VPC
 resource "aws_vpc" "my_vpc" {
