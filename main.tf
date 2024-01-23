@@ -267,6 +267,7 @@ resource "aws_instance" "app_server" {
   tags = {
     Name = "App_server"
   }
+  user_data = file("web.sh")
 }
 
 resource "aws_instance" "backend_server" {
@@ -278,7 +279,7 @@ resource "aws_instance" "backend_server" {
   tags = {
     Name = "Backend_server"
   }
- 
+  user_data = file("web.sh")
 }
 # Create AWS MYSQL RDS
 resource "aws_db_instance" "default" {
